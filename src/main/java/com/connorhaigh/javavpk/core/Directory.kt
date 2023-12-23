@@ -1,5 +1,6 @@
 package com.connorhaigh.javavpk.core
 
+@Suppress("unused")
 class Directory(path: String) {
     /**
      * Returns the path of this directory.

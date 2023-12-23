@@ -43,12 +43,13 @@ object JavaVPK {
                     OUTPUT_OPTION -> output = args[++argument]
                     VERBOSE_OPTION -> verbose = true
                 }
+
                 argument++
             }
 
             // check arguments
             if (input == null || output == null) {
-                throw Exception()
+                throw Exception("Input or Output parameter is null")
             }
         } catch (exception: Exception) {
             // invalid arguments
