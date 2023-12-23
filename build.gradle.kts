@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.9.21"
+    id("org.jlleitschuh.gradle.ktlint") version "12.0.3"
 }
 
 group = "com.connorhaigh.javavpk"
@@ -10,11 +11,6 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
-}
-
-tasks.test {
-    useJUnitPlatform()
 }
 
 kotlin {
